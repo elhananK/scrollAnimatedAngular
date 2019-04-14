@@ -1,0 +1,80 @@
+<elh-navigation></elh-navigation>
+
+
+<div class="scroller"></div>
+
+
+<!-- style="background-color: rgba(255, 0, 0, 0.438)" -->
+<section class="page-section" #sectionsOne
+  [ngStyle]="{zIndex: 3}">
+  <div>
+
+    <elh-photo-description
+      maxWidth="250px"
+      subTitle="Improve Your Photo Taking Skills"
+      subDescription="Expirement with your photos and find out which of them
+      are WOW. Discover what's popular and Receive awesome
+      insights. As you level up in the game, you'll find yourself
+      improving your photo-taking skills, too.">
+    </elh-photo-description>
+
+  </div>
+  <div class="img-section">
+    <div class="img" style="background-image: url('assets/first.jpg')"></div>
+  </div>
+</section>
+
+
+<!-- style="background-color: rgba(255, 255, 0, 0.466)" -->
+<section class="page-section animation-scroll-down" #sectionsTwo
+  [ngStyle]="{zIndex: 2}">
+  <div class="img-section align-right" >
+    <div class="gallery">
+      <div class="cell">
+        <div *ngFor="let item of images" class="cube-img" #imageRef
+          [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
+          <img *ngIf="item.logo" [src]="item.logo" alt="image-logo">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+      <elh-photo-description
+        maxWidth="386px"
+        subTitle="GuruShots Makes Your Photos More Meaningful"
+        subDescription="Get massive exposure for your photos and
+         meaningful recognation from a global community of people like you.
+        Best of the best, players can go from virtual to real world recognation
+        by being featured in magazines and
+        newspapers - and even international photo exhibitions!">
+      </elh-photo-description>
+
+    </div>
+</section>
+
+
+<!-- style="background-color: green" -->
+<section class="page-section animation-scroll-down" #sectionsThree
+  [ngStyle]="{zIndex: 1}">
+
+  <div>
+    <elh-photo-description
+      maxWidth="320px"
+      subTitle="Get your photos exhibited in galleries around the world"
+      subDescription="From New York and London to Cape Town,
+      Singapore and beyond. Around 5000 GuruShots players
+      are recognized each month, with tens of thousands already
+      exhibited. Now, you have the opportunity to get recognized,
+      and connect with like-minded friends.">
+    </elh-photo-description>
+  </div>
+
+  <div class="img-section">
+    <div class="img full-heigth" #imageAnim
+      style="background-image: url('../assets/third.jpg');">
+    </div>
+  </div>
+
+</section>
+

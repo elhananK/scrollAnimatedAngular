@@ -1,0 +1,44 @@
+:host {
+  position: fixed;
+  width: 100%;
+  z-index: 40;
+  nav {
+    background-color: #1f1e1f;
+
+    &>div {
+      max-width: 1366px;
+      margin: 0 auto;
+      padding: 0 70px;
+      display: flex;
+    }
+
+    .nav-bar {
+      flex: 1;
+      direction: rtl;
+      align-items: center;
+      display: flex
+    }
+
+    a, button {
+      color: white;
+      outline: none;
+      padding: 4px 12px;
+      margin: 4px;
+      font-size: 11px;
+    }
+
+    span {
+      margin: 20px;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    .sign-up {
+      border: solid 1px;
+      border-radius: 4px;
+    }
+  }
+}

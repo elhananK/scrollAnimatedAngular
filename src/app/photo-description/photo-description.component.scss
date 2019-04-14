@@ -1,0 +1,48 @@
+
+:host {
+
+  padding: 150px;
+
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 15px;
+    margin: 15px 0;
+    max-width: 390px;
+  }
+  a {
+    padding: 12px 0;
+    padding-right: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 0;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+    }
+    &::after {
+      width: 4px;
+      height: 4px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      right: -17px;
+      transform: rotate(45deg);
+      border-right: solid 2px black;
+      border-top: solid 2px black;
+      top: 19px;
+    }
+    &::before {
+      width: 10px;
+      height: 2px;
+      right: -16px;
+      top: 21px;
+      background-color: black;
+    }
+  }
+}
